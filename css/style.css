@@ -694,7 +694,7 @@ section {
   opacity: 0;
   transition: 0.4s;
 }
-[data-anime="left"]{
+[data-anime="bottom"]{
   transform: translate3d(-30px,0,0)
 }
 [data-anime="right"]{
