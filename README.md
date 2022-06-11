@@ -1,7 +1,7 @@
 # dia dos namorados
 ### Responsive Website Books-website
 
- <p>Site responsivo usando HTML, CSS e JavaScript. Possui um header que contém um cabeçalho com link de home, featured, arrivals, reviews e blogs.</p>
+ <p>Site responsivo usando HTML, CSS e JavaScript. Possui um header que contém um cabeçalho com link de início,destaque, novidades, avaliações e blogs.</p>
 
 ## Pré-visualização:
 
