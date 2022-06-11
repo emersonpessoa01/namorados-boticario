@@ -695,10 +695,10 @@ section {
   transition: 0.4s;
 }
 [data-anime="left"]{
-  transform: translate3d(-40px,0,0)
+  transform: translate3d(-30px,0,0)
 }
 [data-anime="right"]{
-  transform: translate3d(40px,0,0)
+  transform: translate3d(30px,0,0)
 }
 [data-anime].animate{
   opacity:1;
