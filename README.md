@@ -5,7 +5,7 @@
 
 ## Pré-visualização:
 
-[dia-namorados-boticario](https://dia-dos-namorados-boti.netlify.app/)
+[dia-namorados-boticario]()
 
 <div align="center"><img src="image/casal-boti02.png" width=auto>
 </div>
