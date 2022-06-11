@@ -1,6 +1,11 @@
-# Boticário Namorados
-### Website Responsivo Dia dos Namorados
+# dia dos namorados
+### Responsive Website Books-website
+
+ <p>Site responsivo usando HTML, CSS e JavaScript. Possui um header que contém um cabeçalho com link de home, featured, arrivals, reviews e blogs.</p>
 
 ## Pré-visualização:
-[boticario-namorados](https://namorados-boticario.netlify.app/)
-<div align="center"><img style="border-radius:8px" src="assets/casal-boti02.png" width="auto"></div>
+
+[dia-namorados-boticario](https://dia-dos-namorados-boti.netlify.app/)
+
+<div align="center"><img src="image/casal-boti02.png" width=auto>
+</div>

@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dia dos namorados</title>
+    <title>O Boticário | dia dos namorados</title>
+
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
+
     <!-- font awesome cdn link  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
+
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon" />
   </head>
   <body>
+    <!-- header section starts  -->
+
     <header class="header">
       <div class="header-1">
-        <a href="#" class="logo">
-          <img src="assets/logo-boti.png" alt="" />
+        <a
+          href="https://www.boticario.com.br/?ds_rl=1270144&ds_rl=1270144&gclid=Cj0KCQjwqPGUBhDwARIsANNwjV7cXudQ5hBzx_hPult754NQ-d9NCkl6ENCTTbQFayBFMDy5Qz0FjXIaAmz8EALw_wcB&gclsrc=aw.ds"
+          class="logo"
+          target="_blank"
+        >
+          <img src="image/logo-boti.png" alt="logo" />
         </a>
+
         <form action="" class="search-form">
           <input
             type="search"
+            name=""
             placeholder="pesquise aqui..."
-            id="search-form"
+            id="search-box"
           />
           <label for="search-box" class="fas fa-search"></label>
         </form>
@@ -35,18 +48,982 @@
           <div id="search-btn" class="fas fa-search"></div>
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-shopping-cart"></a>
+          <div id="login-btn" class="fas fa-user"></div>
         </div>
       </div>
+
       <div class="header-2">
         <nav class="navbar">
-          <a href="#home">home</a>
-          <a href="#destaque">destaque</a>
-          <a href="#sobre">sobre</a>
-          <a href="#produtos">produtos</a>
+          <a href="#home">início</a>
+          <a href="#featured">destaque</a>
+          <a href="#arrivals">novidades</a>
+          <a href="#reviews">avaliações</a>
           <a href="#blogs">blogs</a>
         </nav>
       </div>
     </header>
+
+    <!-- header section ends -->
+
+    <!-- bottom navbar  -->
+
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#featured" class="fas fa-list"></a>
+      <a href="#arrivals" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!-- login form  -->
+
+    <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+
+      <form action="">
+        <h3>entrar</h3>
+        <span>nome de usuário</span>
+        <input
+          type="email"
+          name=""
+          class="box"
+          placeholder="digite seu email"
+          id=""
+        />
+        <span>senha</span>
+        <input
+          type="password"
+          name=""
+          class="box"
+          placeholder="digite sua senha"
+          id=""
+        />
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me"> lembrar-me</label>
+        </div>
+        <input type="submit" value="entrar" id="btn" class="purple" />
+        <p>esqueceu sua senha ? <a href="#">clique aqui</a></p>
+        <p>não tem conta ? <a href="#">crie uma</a></p>
+      </form>
+    </div>
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>Namorados seu presente está aqui.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            deserunt nostrum accusamus. Nam alias sit necessitatibus, aliquid ex
+            minima at!
+          </p>
+          <a href="#" class="btn purple">compre agora</a>
+        </div>
+
+        <div class="swiper books-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="image/botica214verano.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/linda-resize.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/malitzid-resize.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/acqua-fresca-remove.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/glamour-resize.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/malbec.png" alt=""
+            /></a>
+          </div>
+          <img src="image/stand.png" class="stand" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- home section ense  -->
+
+    <!-- icons section starts  -->
+
+    <section class="icons-container">
+      <div class="icons" data-anime="left">
+        <i class="fas fa-shipping-fast"></i>
+        <div class="content">
+          <h3>envio grátis</h3>
+          <p>pedidos acima de R$100</p>
+        </div>
+      </div>
+
+      <div class="icons" data-anime="left">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+          <h3>pagamento seguro</h3>
+          <p>R$ pagamento seguro</p>
+        </div>
+      </div>
+
+      <div class="icons" data-anime="right">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+          <h3>retorno fáceis</h3>
+          <p>10 dias de devolução</p>
+        </div>
+      </div>
+
+      <div class="icons" data-anime="left">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+          <h3>suporte 24 horas por dia, 7 dias por semana</h3>
+          <p>ligue-nos a qualquer hora</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- icons section ends -->
+
+    <!-- featured section starts  -->
+
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>perfumes em destaque</span></h1>
+
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/linda-resize.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/glamour-resize.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/malbec.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/botica214verano.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/acqua-fresca-remove.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/malitzid-resize.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/botica214.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/linda-promotion.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/zaadGo.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/uomini-remove.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>perfumes em destaque</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <a href="#" class="btn purple"
+                >adicionar <i class="fas fa-shopping-cart"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <!-- featured section ends -->
+
+    <!-- newsletter section starts -->
+
+    <section class="newsletter">
+      <form action="">
+        <h3 data-anime="left">fique por dentro das nossas ofertas e novidades!</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="seu email"
+          id="email"
+          class="box"
+          data-anime="right"
+        />
+        <small id="spanEmail">Erro no envio: Endereço de email inválido.</small>
+        <p id="textoSucesso"></p>
+        <input
+          type="submit"
+          value="se inscrever"
+          id="btnSubscribe"
+          class="purple"
+          data-anime="left"
+        />
+      </form>
+    </section>
+
+    <!-- newsletter section ends -->
+
+    <!-- arrivals section starts  -->
+
+    <section class="arrivals" id="arrivals">
+      <h1 class="heading"><span>novidades</span></h1>
+
+      <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/acqua-fresca-remove.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/malbec.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/linda-resize.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/uomini-remove.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/zaadGo.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/botica214verano.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/botica214.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/glamour-resize.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/malitzid-resize.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/linda-promotion.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>novidades</h3>
+              <div class="price">R$15.99 <span>R$20.99</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- arrivals section ends -->
+
+    <!-- deal section starts  -->
+
+    <section class="deal">
+      <div class="content" data-anime="left">
+        <h3>a cor do do dia</h3>
+        <h1>mês dos namorados.</h1>
+        <p>
+          semana de desconto até 50% para dia dos namorados. Namorados seu
+          presente está aqui.
+        </p>
+        <a href="#" class="btn purple">compre agora</a>
+      </div>
+
+      <div class="image" data-anime="right">
+        <img src="image/linda-promotion.png" alt="" />
+      </div>
+    </section>
+
+    <!-- deal section ends -->
+
+
+    <!-- reviews section starts  -->
+
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span>opiniões de clientes</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/renatapausini01.jpg" alt="" />
+            <h3>renata pausini</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/emersonpessoa01.jpg" alt="" />
+            <h3>emerson pessoa</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/renatapausini02.jpg" alt="" />
+            <h3>renata pausini</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <img src="image/emersonpessoa03.jpeg" alt="" />
+            <h3>emerson pessoa</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-5.png" alt="" />
+            <h3>john deo</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-6.png" alt="" />
+            <h3>Naomi Kenji</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique
+              facere hic.
+            </p>
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- reviews section ends -->
+
+    <!-- blogs section starts  -->
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>nossos blogs</span></h1>
+
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card2.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card4.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card5.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card6-idosos.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card7-negros.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card8-meninas.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card9-meninos.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card10.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card11.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card12-brancos.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card13.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/card14.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>Todas as formas de amar!!!</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                odio.
+              </p>
+              <a href="#" class="btn purple">leia mais</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- blogs section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="deal">
+      <div class="content" data-anime="right">
+        <h3 id="content">Temos como missão impactar e ajudar pessoas nossos códigos! </h1>
+        <p id="content">
+          Essa é a melhor forma de tornar o trabalho prazeroso.
+          Estamos aprendendo juntos muito mais do que se estivéssemos sozinhos
+            nessa caminhada. Portanto, uma corrente é bem mais forte quanto um elo
+            mais fraco.
+        </p>
+        <a href="#" class="btn purple" id="content">Uma prévia sobre nós</a>
+      </div>
+
+      <div class="image" id="img" data-anime="left">
+        <img src="image/emre02.png" class="img-emre" alt="" />
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3 data-anime="left">nossas localizações</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> brasil </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> portugal </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> venezuela </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> paraguai </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> colômbia </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> moçambique </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> angola </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> EUA </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> japão </a>
+        </div>
+
+        <div class="box">
+          <h3 data-anime="right">links rápidos</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i> início </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> destaque </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> novidades </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> avaliações </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+          <h3 data-anime="right">links extras</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i> informações da conta
+          </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> itens encomendados</a>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i> política de privacidade
+          </a>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i> forma de pagamento
+          </a>
+          <a href="#"> <i class="fas fa-arrow-right"></i> nossos serviços </a>
+        </div>
+
+        <div class="box">
+          <h3 data-anime="left">informações de contato</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +55(99)1234-5678 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +55((99)2222-3333 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> oboticario@boti.com </a>
+          <img src="image/worldmap.png" class="map" alt="" />
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="credit">
+        criado por <span>emerson pessoa & renata pausini</span> | todos os
+        direitos reservados&copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- loader  -->
+
+    <div class="loader-container">
+      <img src="image/wizard_1.gif" alt="" />
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
   </body>
-  <script src="js/script.js"></script>
 </html>
