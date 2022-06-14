@@ -700,7 +700,7 @@ section {
 
 [data-anime].animate{
   opacity:1;
-  transform: scale(1);
+  transform: scale(1.01);
 }
 
 .reviews .reviews-slider .box {
