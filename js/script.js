@@ -196,15 +196,19 @@ const animationClass = "animate";
 function animeScroll(){
   const windowTop = window.pageYOffset + ((window.innerHeight * 3)/4.5);
   target.forEach(function(element){
-    if((windowTop) > element.offsetTop){
+    if(element.offsetTop < windowTop){
       element.classList.add(animationClass)
     }else{
       element.classList.remove(animationClass)
     }
 
-    console.log(element.offsetTop)
+    // console.log(element.offsetTop)
+    // console.log(window.innerHeight)
   })
 }
 window.addEventListener("scroll",function(){
   animeScroll()
 })
+
+
+
