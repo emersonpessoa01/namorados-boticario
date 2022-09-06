@@ -5,7 +5,7 @@
 
 ## Pré-visualização:
 
-[dia-namorados-boticario](https://namorados-boticario-2022.netlify.app/)
+[dia-namorados-boticario](https://emersonpessoa01.github.io/namorados-boticario/)
 
 <div align="center"><img src="image/casal-boti02.png" width=auto>
 </div>
